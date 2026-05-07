@@ -1,0 +1,292 @@
+    :root {
+      --bg: #f5f0e8;
+      --surface: #fffdf8;
+      --ink: #1a1612;
+      --ink-light: #6b6056;
+      --accent: #c0392b;
+      --accent-light: #e8d5d2;
+      --rule: #d4c9b8;
+      --shadow: rgba(26,22,18,0.10);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+      padding: 0 0 80px;
+    }
+
+    /* ─── HEADER ─────────────────────────────────── */
+    header {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 56px 64px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 18px,
+        rgba(255,255,255,0.025) 18px,
+        rgba(255,255,255,0.025) 19px
+      );
+    }
+
+    .header-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.08;
+      position: relative;
+    }
+
+    .header-sub {
+      margin-top: 14px;
+      font-size: 15px;
+      font-weight: 300;
+      color: rgba(245,240,232,0.6);
+      position: relative;
+    }
+
+    /* ─── SEARCH & STATS ─────────────────────────── */
+    .toolbar {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 24px 0;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .search-wrap {
+      flex: 1;
+      min-width: 220px;
+      position: relative;
+    }
+
+    .search-wrap svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--ink-light);
+      pointer-events: none;
+    }
+
+    #search {
+      width: 100%;
+      padding: 10px 14px 10px 40px;
+      border: 1.5px solid var(--rule);
+      border-radius: 6px;
+      background: var(--surface);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      color: var(--ink);
+      outline: none;
+      transition: border-color .2s;
+    }
+
+    #search:focus { border-color: var(--accent); }
+
+    .stats {
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      color: var(--ink-light);
+      white-space: nowrap;
+    }
+
+    /* ─── FILE LIST ──────────────────────────────── */
+    .list-wrap {
+      max-width: 900px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    .section-rule {
+      border: none;
+      border-top: 1.5px solid var(--rule);
+      margin-bottom: 0;
+    }
+
+    .file-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 22px 20px;
+      border-bottom: 1px solid var(--rule);
+      background: transparent;
+      transition: background .15s;
+      animation: fadeUp .35s ease both;
+    }
+
+    .file-item:hover { background: var(--surface); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .file-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 52px;
+      background: var(--surface);
+      border: 1.5px solid var(--rule);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .file-icon::after {
+      content: 'PDF';
+      font-family: 'DM Mono', monospace;
+      font-size: 8px;
+      font-weight: 500;
+      color: #fff;
+      background: var(--accent);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding: 2px 0;
+      letter-spacing: .08em;
+    }
+
+    .file-icon svg { color: var(--ink-light); }
+
+    .file-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .file-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 4px;
+    }
+
+    .file-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-light);
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .file-desc {
+      font-size: 13px;
+      color: var(--ink-light);
+      margin-top: 5px;
+      font-weight: 300;
+    }
+
+    .file-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 20px;
+      background: var(--accent-light);
+      color: var(--accent);
+    }
+
+    /* ─── DOWNLOAD BUTTON ────────────────────────── */
+    .btn-dl {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      border-radius: 4px;
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      letter-spacing: .06em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background .15s, transform .1s;
+      white-space: nowrap;
+    }
+
+    .btn-dl:hover {
+      background: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .btn-dl svg { flex-shrink: 0; }
+
+    /* ─── EMPTY STATE ─────────────────────────────── */
+    .empty {
+      text-align: center;
+      padding: 64px 24px;
+      display: none;
+    }
+
+    .empty svg { color: var(--rule); margin-bottom: 16px; }
+
+    .empty p {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      color: var(--ink-light);
+    }
+
+    /* ─── FOOTER ─────────────────────────────────── */
+    footer {
+      max-width: 900px;
+      margin: 40px auto 0;
+      padding: 0 24px;
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-light);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 40px 24px 32px; }
+      .btn-dl span { display: none; }
+      .btn-dl { padding: 9px 12px; }
+    }
