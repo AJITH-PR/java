@@ -1,7 +1,7 @@
 [
   {
     "name": "Java Juice",
-    "href": "java/assets/pdf/Java_Juice.pdf",
+    "href": "assets/pdf/Java_Juice.pdf",
     "size": "1.7 MB",
     "pages": 159,
     "date": "2024-12-01",
@@ -10,7 +10,7 @@
   },  
   {
     "name": "Java Spring Boot",
-    "href": "java/assets/pdf/Java2.pdf",
+    "href": "assets/pdf/Java2.pdf",
     "size": "1.3 MB",
     "pages": 106,
     "date": "2025-03-15",
