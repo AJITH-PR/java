@@ -1,1 +1,56 @@
-
+[
+  {
+    "name": "Java Juice",
+    "href": "java/assets/pdf/Java_Juice.pdf",
+    "size": "1.7 MB",
+    "pages": 159,
+    "date": "2024-12-01",
+    "desc": "Core Java interview questions and answers",
+    "tags": ["Java", "Exception Handling", "Collections", "Multithreading", "JVM"]
+  },  
+  {
+    "name": "Java Spring Boot",
+    "href": "java/assets/pdf/Java2.pdf",
+    "size": "1.3 MB",
+    "pages": 106,
+    "date": "2025-03-15",
+    "desc": "One stop solution - Java , SpringBoot , SQL , Testing , Git",
+    "tags": ["SpringBoot", "SQL", "Testing", "Git"]
+  },
+  {
+    "name": "User Manual v3.1",
+    "href": "files/user-manual-v3.1.pdf",
+    "size": "1.4 MB",
+    "pages": 96,
+    "date": "2025-01-10",
+    "desc": "Step-by-step instructions for setup, operation, and troubleshooting.",
+    "tags": ["documentation", "technical"]
+  },
+  {
+    "name": "Research Paper: AI Trends",
+    "href": "files/research-ai-trends.pdf",
+    "size": "890 KB",
+    "pages": 22,
+    "date": "2025-04-20",
+    "desc": "A survey of emerging AI methodologies and industry adoption patterns.",
+    "tags": ["research", "AI"]
+  },
+  {
+    "name": "Project Proposal � Q3",
+    "href": "files/project-proposal-q3.pdf",
+    "size": "620 KB",
+    "pages": 8,
+    "date": "2025-06-02",
+    "desc": "Scope, timeline, budget estimate, and team allocation for Q3 initiative.",
+    "tags": ["planning"]
+  },
+  {
+    "name": "Employee Handbook",
+    "href": "files/employee-handbook.pdf",
+    "size": "2.1 MB",
+    "pages": 64,
+    "date": "2024-09-01",
+    "desc": "Company policies, benefits, code of conduct, and onboarding guide.",
+    "tags": ["HR", "internal"]
+  }
+]
