@@ -109,6 +109,13 @@
             <line x1="12" y1="15" x2="12" y2="3"/>
           </svg>
           <span>Download</span>
+        </a>
+        <a class="btn-dl" href="${f.href}" target="_blank" title="Preview ${f.name}">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+          <span>Preview</span>
         </a>`;
       list.appendChild(li);
     });
