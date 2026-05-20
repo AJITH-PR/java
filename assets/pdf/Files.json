@@ -18,39 +18,30 @@
     "tags": ["SpringBoot", "SQL", "Testing", "Git"]
   },
   {
-    "name": "User Manual v3.1",
-    "href": "files/user-manual-v3.1.pdf",
-    "size": "1.4 MB",
-    "pages": 96,
+    "name": "Networking for DevOps",
+    "href": "assets/pdf/networkingfordevops.pdf",
+    "size": "1.0 MB",
+    "pages": 11,
     "date": "2025-01-10",
-    "desc": "Step-by-step instructions for setup, operation, and troubleshooting.",
-    "tags": ["documentation", "technical"]
+    "desc": "DevOps networking questions",
+    "tags": ["DevOps","Networking"]
   },
   {
-    "name": "Research Paper: AI Trends",
-    "href": "files/research-ai-trends.pdf",
-    "size": "890 KB",
-    "pages": 22,
-    "date": "2025-04-20",
-    "desc": "A survey of emerging AI methodologies and industry adoption patterns.",
-    "tags": ["research", "AI"]
+    "name": "Spring Boot 40",
+    "href": "assets/pdf/Spring_boot_02.pdf",
+    "size": "1.1 MB",
+    "pages": 10,
+    "date": "2025-01-10",
+    "desc": "Spring boot 40 questions",
+    "tags": ["Spring","Spring Boot"]
   },
   {
-    "name": "Project Proposal � Q3",
-    "href": "files/project-proposal-q3.pdf",
-    "size": "620 KB",
-    "pages": 8,
-    "date": "2025-06-02",
-    "desc": "Scope, timeline, budget estimate, and team allocation for Q3 initiative.",
-    "tags": ["planning"]
+    "name": "Kafka",
+    "href": "assets/pdf/kafka.pdf",
+    "size": "3.7 MB",
+    "pages": 11,
+    "date": "2025-01-10",
+    "desc": "kafka questions",
+    "tags": ["Kafka"]
   },
-  {
-    "name": "Employee Handbook",
-    "href": "files/employee-handbook.pdf",
-    "size": "2.1 MB",
-    "pages": 64,
-    "date": "2024-09-01",
-    "desc": "Company policies, benefits, code of conduct, and onboarding guide.",
-    "tags": ["HR", "internal"]
-  }
 ]
